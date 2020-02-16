@@ -1,3 +1,388 @@
+@media (max-width: 767px) {
+    .Layout {
+        .Nav-Menu-Mobile {
+            position: fixed;
+            display: flex;
+            z-index: 1;
+            width: 100%;
+            padding: 15px 0;
+            img {
+                height: 24px;
+                width: 24px;
+                margin: auto 2.5px auto auto;
+                filter: invert(91%) sepia(12%) saturate(775%) hue-rotate(344deg) brightness(98%) contrast(96%);
+            }
+            h4 {
+                font-family: $font2;
+                color: white;
+                margin: auto;
+                letter-spacing: 1px;
+                font-size: 32px;
+            }
+        }
+        .Desktop-Nav{
+            display: initial;
+            position: fixed;
+            width: 100%;
+            z-index: -1;
+            box-sizing: border-box;
+            .Logo{
+                text-align: center;
+                margin: 0;
+                img {
+                  height: 75px;
+                  width: 75px;
+                  transform: translateX(10px);
+                }
+            }
+            .Menu{
+                text-align: center;
+                font-family: $font2;
+                font-size: 1.15em;
+                padding-top: 0px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    letter-spacing: 1px;
+                    margin: 0 10px;
+                    font-weight: bold;
+                    display: block;
+                }
+                a:hover{
+                    color: $mainColor;
+                }
+                .active{
+                    color: #f5deb3;
+                }
+            }
+            .Social-Media{
+                text-align: center;
+                padding-top: 15px;
+                a{
+                    margin: 0 8px;
+                    img {
+                        height: 16px;
+                        width: 16px;
+                        filter: invert(100%) sepia(0%) saturate(7498%) hue-rotate(322deg) brightness(100%) contrast(102%);
+                    }
+                }
+            }
+        }
+        .Content {
+        }
+        .Footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 0 15px 10px 15px;
+            box-sizing: border-box;
+            a {
+                text-decoration: none;
+            }
+            .Footer-Top {
+                display: flex;
+                transform: translateY(10px);
+                a {
+                    font-family: $font2;
+                        font-size: 12px;
+                        color: white;
+                        letter-spacing: 1px;
+                        margin: 0;
+                        img {
+                            transform: translateY(3px);
+                            margin: 0 5px 0 0;
+                            height: 16px;
+                            width: 16px;
+                            filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(211deg) brightness(99%) contrast(103%);
+                        }
+                }
+                p {
+                    margin: 0 15px 0 auto;
+                    color: white;
+                    font-family: $font2;
+                    font-size: 12px;
+                }
+            }
+            .Footer-Bottom {
+                display: flex;
+                .Title {
+                    h4 {
+                        font-family: $font2;
+                        margin: 0;
+                        font-size: 1.15em;
+                        color: white;
+                        letter-spacing: 1px;
+                    }
+                }
+                .Page-Navigation {
+                    margin-left: auto;
+                    a {
+                        font-family: $font2;
+                        font-size: 1.15em;
+                        color: white;
+                        letter-spacing: 1px;
+                        img {
+                            transform: translateY(25px);
+                            margin: 0 10px;
+                            height: 16px;
+                            width: 16px;
+                            filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(211deg) brightness(99%) contrast(103%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .Layout {
+        .Mobile-Nav{
+            display: none;
+        }
+        .Nav-Menu-Mobile {
+            display: none;
+        }
+        .Desktop-Nav{
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            box-sizing: border-box;
+            padding: 0 25px;
+            .Logo{
+                text-align: left;
+                margin: 25px 0 0 15px;
+                display: inline-block;
+                img {
+                  height: 75px;
+                  width: 75px;
+                }
+            }
+            .Menu{
+                text-align: center;
+                font-family: $font2;
+                font-size: 1.5em;
+                padding-top: 35px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    letter-spacing: 1px;
+                    margin: 0 10px;
+                    font-weight: bold;
+                }
+                a:hover{
+                    color: $mainColor;
+                }
+                .active{
+                    color: #f5deb3;
+                }
+            }
+            .Social-Media{
+                text-align: right;
+                padding-top: 45px;
+                padding-right: 15px;
+                a{
+                    margin: 0 8px;
+                    img {
+                        height: 24px;
+                        width: 24px;
+                        filter: invert(100%) sepia(0%) saturate(7498%) hue-rotate(322deg) brightness(100%) contrast(102%);
+                    }
+                }
+            }
+        }
+        .Content {
+        }
+        .Footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 0 25px 25px 25px;
+            box-sizing: border-box;
+            a {
+                text-decoration: none;
+            }
+            .Footer-Top {
+                display: flex;
+                transform: translateY(10px);
+                a {
+                    font-family: $font2;
+                        font-size: 14px;
+                        color: white;
+                        letter-spacing: 1px;
+                        margin: 0;
+                        img {
+                            transform: translateY(3px);
+                            margin: 0 5px 0 0;
+                            height: 16px;
+                            width: 16px;
+                            filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(211deg) brightness(99%) contrast(103%);
+                        }
+                }
+                p {
+                    margin: 0 15px 0 auto;
+                    color: white;
+                    font-family: $font2;
+                }
+            }
+            .Footer-Bottom {
+                display: flex;
+                .Title {
+                    h4 {
+                        font-family: $font2;
+                        margin: 0;
+                        font-size: 1.5em;
+                        color: white;
+                        letter-spacing: 1px;
+                    }
+                }
+                .Page-Navigation {
+                    margin-left: auto;
+                    a {
+                        font-family: $font2;
+                        font-size: 1.5em;
+                        color: white;
+                        letter-spacing: 1px;
+                        img {
+                            transform: translateY(25px);
+                            margin: 0 10px;
+                            height: 24px;
+                            width: 24px;
+                            filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(211deg) brightness(99%) contrast(103%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .Layout {
+        .Mobile-Nav{
+            display: none;
+        }
+        .Nav-Menu-Mobile {
+            display: none;
+        }
+        .Desktop-Nav{
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            box-sizing: border-box;
+            padding: 0 25px;
+            .Logo{
+                text-align: left;
+                margin: 15px 0 0 15px;
+                display: inline-block;
+                img {
+                  height: 105px;
+                  width: 105px;
+                }
+            }
+            .Menu{
+                text-align: center;
+                font-family: $font2;
+                font-size: 1.75em;
+                padding-top: 35px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    letter-spacing: 1px;
+                    margin: 0 10px;
+                    font-weight: bold;
+                }
+                a:hover{
+                    color: $mainColor;
+                }
+                .active{
+                    color: #f5deb3;
+                }
+            }
+            .Social-Media{
+                text-align: right;
+                padding-top: 45px;
+                padding-right: 15px;
+                a{
+                    margin: 0 10px;
+                    img {
+                        height: 32px;
+                        width: 32px;
+                        filter: invert(100%) sepia(0%) saturate(7498%) hue-rotate(322deg) brightness(100%) contrast(102%);
+                    }
+                }
+            }
+        }
+        .Content {
+        }
+        .Footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 0 25px 10px 25px;
+            box-sizing: border-box;
+            a {
+                text-decoration: none;
+            }
+            .Footer-Top {
+                display: flex;
+                transform: translateY(10px);
+                a {
+                    font-family: $font2;
+                        font-size: 16px;
+                        color: white;
+                        letter-spacing: 1px;
+                        margin: 0;
+                        img {
+                            transform: translateY(3px);
+                            margin: 0 5px 0 0;
+                            height: 16px;
+                            width: 16px;
+                            filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(211deg) brightness(99%) contrast(103%);
+                        }
+                }
+                p {
+                    margin: 0 15px 0 auto;
+                    color: white;
+                    font-family: $font2;
+                }
+            }
+            .Footer-Bottom {
+                display: flex;
+                .Title {
+                    h4 {
+                        font-family: $font2;
+                        margin: 0;
+                        font-size: 2em;
+                        color: white;
+                        letter-spacing: 1px;
+                    }
+                }
+                .Page-Navigation {
+                    margin-left: auto;
+                    a {
+                        font-family: $font2;
+                        font-size: 1.65em;
+                        color: white;
+                        letter-spacing: 1px;
+                        img {
+                            transform: translateY(25px);
+                            margin: 0 10px;
+                            height: 24px;
+                            width: 24px;
+                            filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(211deg) brightness(99%) contrast(103%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*
 .Layout {
     .Desktop-Nav{
         display: grid;
@@ -120,4 +505,4 @@
             }
         }
     }
-}
+}*/

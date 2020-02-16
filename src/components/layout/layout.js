@@ -9,6 +9,8 @@ import React from "react"
 
 import Header from "./header"
 import Footer from './footer'
+
+import MenuIcon from '../../images/Icons/Navigation/menu.svg'
 import '../../sass/index.scss'
 
 const Layout = ({ children, payload }) => {
@@ -16,6 +18,10 @@ const Layout = ({ children, payload }) => {
   return (
     <div className="Layout">
       <Header />
+      <div className="Nav-Menu-Mobile">
+        {/* <img src={MenuIcon}/> */}
+        <h4>Menu</h4>
+      </div>
       <div className="Content">
         { children }
       </div>

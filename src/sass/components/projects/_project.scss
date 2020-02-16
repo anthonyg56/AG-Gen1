@@ -1,90 +1,162 @@
-.Project-Display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    .Container {
-        transform: translateY(20px);
-        .Title {
-            display: none;
-            width: 75%;
-            margin: 0 auto;
-            h1 {
-                font-family: $font2;
-                font-size: 2.75em;
-                margin: 0 auto;
-                letter-spacing: 1px;
-                align-self: center;
+@media (min-width: 640px) {
+
+}
+
+@media (min-width: 768px) {
+    .Project-Display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        .Container {
+            transform: translateY(20px);
+            .Title {
+                display: none;
             }
-            img {
-                height: 32px;
-                width: 32px;
-                transform: translateY(20px);
-            }
-            img:hover {
-                cursor: pointer;
-            }
-        }
-        .Body {
-            display: grid;
-            grid-template-columns: 45% 55%;
-            padding: 35px;
-            box-sizing: border-box;
-            width: 100%;
-            .Picture {
-                object-fit: fill;
+            .Body {
+                display: grid;
+                grid-template-columns: 45% 55%;
+                padding: 35px;
+                box-sizing: border-box;
                 width: 100%;
-                border-radius: 5px;
-                -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-                box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-                img {
-                    height: 100%;
+                .Picture {
+                    object-fit: contain;
+                    margin: auto 0;
                     width: 100%;
+                    height: 85%;
                     border-radius: 5px;
+                    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    align-items: center;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                }
+                .Project-Section {
+                    padding: 0px 25px 0px 5px;
+                    text-align: center;
+                    font-family: $font2;
+                    h2 {
+                        font-size: 1.5em;
+                        letter-spacing: 1px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
                 }
             }
-            .Project-Section {
-                padding: 20px 45px 20px 25px;
+            .Icon-Links {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                width: 80%;
+                margin: 0 auto;
+                height: 100%;
                 text-align: center;
-                font-family: $font2;
-                h2 {
-                    font-size: 2.15em;
-                    letter-spacing: 1px;
+                a {
+                    text-decoration: none;
                 }
-                p {
-                    font-size: 18px;
+                .Icon {
+                    border-radius: 5px;
+                    padding: 5px 0;
+                    img {
+                        height: 24px;
+                        width: 24px;
+                    }
+                    h6 {
+                        font-family: $font2;
+                        font-size: 14px;
+                        margin: 5px 0 0 0;
+                    }
+                }
+                .Icon:hover {
+                    cursor: pointer;
+                }
+                .Active-Icon {
+                    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
                 }
             }
         }
-        .Icon-Links {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            width: 50%;
-            margin: 0 auto;
-            height: 100%;
-            text-align: center;
-            a {
-                text-decoration: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .Project-Display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        .Container {
+            transform: translateY(20px);
+            .Title {
+                display: none;
             }
-            .Icon {
-                border-radius: 5px;
-                padding: 5px 0;
-                img {
-                    height: 32px;
-                    width: 32px;
+            .Body {
+                display: grid;
+                grid-template-columns: 45% 55%;
+                padding: 35px;
+                box-sizing: border-box;
+                width: 100%;
+                .Picture {
+                    object-fit: fill;
+                    width: 100%;
+                    height: 95%;
+                    margin: auto;
+                    display: flex;
+                    border-radius: 5px;
+                    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 5px;
+                    }
                 }
-                h6 {
+                .Project-Section {
+                    padding: 20px 45px 20px 25px;
+                    text-align: center;
                     font-family: $font2;
-                    font-size: 16px;
-                    margin: 5px 0 0 0;
+                    h2 {
+                        font-size: 2.15em;
+                        letter-spacing: 1px;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
                 }
             }
-            .Icon:hover {
-                cursor: pointer;
-            }
-            .Active-Icon {
-                -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+            .Icon-Links {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                width: 70%;
+                margin: 0 auto;
+                height: 100%;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                }
+                .Icon {
+                    border-radius: 5px;
+                    padding: 5px 0;
+                    img {
+                        height: 32px;
+                        width: 32px;
+                    }
+                    h6 {
+                        font-family: $font2;
+                        font-size: 16px;
+                        margin: 5px 0 0 0;
+                    }
+                }
+                .Icon:hover {
+                    cursor: pointer;
+                }
+                .Active-Icon {
+                    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                }
             }
         }
     }
