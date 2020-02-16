@@ -1,0 +1,57 @@
+.Blog {
+    justify-content: center;
+    .Container {
+        .Title {
+            h1 {
+                font-family: $font2;
+                color: white;
+                font-size: 3em;
+            }
+        }
+        .Search {
+            margin: 50px 0 50px 0;
+            text-align: center;
+            input {
+                background-color: white;
+                border-radius: 30px;
+                border: none;
+                font-family: $font2;
+                font-size: 22px;
+                width: 75%;
+                padding: 5px 15px;
+            }
+        }
+        .Blocks {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 75px;
+            margin-top: 105px;
+            .Block {
+                box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, .15);
+                backdrop-filter: blur(5px);
+                text-align: center;
+                padding: 15px;
+                border-radius: 5px;
+                text-decoration: none;
+                -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                transition: 0.2s;
+                img {
+                    height: 64px;
+                    width: 64px;
+                    filter: invert(22%) sepia(34%) saturate(5223%) hue-rotate(284deg) brightness(87%) contrast(88%);
+                }
+                h4 {
+                    font-family: $font2;
+                    color: white;
+                }
+            }
+            .Block:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+        }
+    }
+}

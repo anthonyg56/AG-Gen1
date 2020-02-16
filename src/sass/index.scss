@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Jaldi|Nothing+You+Could+Do&display=swap');
+
+@import './base/variables';
+@import './base/layout';
+
+@import './components/home/landing';
+@import './components/home/about';
+@import './components/home/services';
+
+@import './components/projects/index';
+@import './components/projects/project';
+
+@import './components/blog/blog';

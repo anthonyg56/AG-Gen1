@@ -1,0 +1,48 @@
+.Services {
+    justify-content: center;
+    .Container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+        padding: 0 75px;
+        .Attribute {
+            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, .15);
+            backdrop-filter: blur(5px);
+            color: white;
+            border-radius: 5px;
+            -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px -10px 13px -7px rgba(0,0,0,0); 
+            box-shadow: 0px 10px 13px -7px #000000, 0px -10px 13px -7px rgba(0,0,0,0);
+            .Pic {
+                text-align: center;
+                padding: 35px 0 15px 0;
+                object-fit: contain;
+                img {
+                    height: 128px;
+                    width: 124px;
+                    filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(92deg) brightness(105%) contrast(104%);
+                }
+            }
+            .Name {
+                text-align: center;
+                h3 {
+                    font-size: 1.5em;
+                    font-family: $font2;
+                    margin: 10px 0;
+                    letter-spacing: 1px;
+                    color: #f5deb3;
+                }
+            }
+            .Description {
+                padding: 0px 30px;
+                text-align: center;
+                p {
+                    font-family: $font2;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}

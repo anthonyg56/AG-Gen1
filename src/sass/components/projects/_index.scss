@@ -1,0 +1,60 @@
+.Projects {
+    .Cards-Container {
+        transform: translateY(25px);
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+        padding: 0 25px;
+        .Projects-Card {
+            height: 475px;
+            width: 100%;
+            border-radius: 5px;
+            -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 21px -4px rgba(0,0,0,0); 
+            box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 21px -4px rgba(0,0,0,0);
+            transition: 0.3s;
+            a {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                text-decoration: none;
+                margin: 0;
+                padding: 0 0 0px 10px;
+                transition: 0.3s;
+                box-sizing: border-box;
+                h1 {
+                    position: absolute;
+                    align-self: center;
+                    justify-self: center;
+                    color: white;
+                    font-family: $font2;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, 50px);
+                    transform: translate(-50%, 50px);
+                    opacity: 0;
+                    margin: 0;
+                    transition: opacity 0.3s, transform 0.2s;
+                }
+                h4 {
+                    margin-top: auto;
+                    color: white;
+                    font-family: $font2;
+                    margin-bottom: 0px;
+                    //letter-spacing: 1px;
+                    font-size: 1.25em;
+                }
+            }
+        }
+        .Projects-Card:hover {
+            transform: scale(1.02);
+            a {
+                background-color: rgba(0,0,0,0.3);
+                h1 {
+                    opacity: initial;
+                    -webkit-transform: translate(-50%, 0px);
+                    transform: translate(-50%, 0px);
+                }
+            }
+        }
+    }
+}
