@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 
 import BackgroundImg from '../misc/backgroundImage'
 import MyPic from '../../images/me.jpeg'
