@@ -2,7 +2,7 @@
     .About-Me {
         justify-content: center;
         .Container {
-            transform: translateY(-30px);
+            transform: translateY(-50px);
             width: 85%;
             box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
             border-radius: 5px;
@@ -11,7 +11,7 @@
             border-radius: 5px;
             -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
             box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-            max-height: 550px;
+            max-height: 560px;
             overflow: scroll;
             .Picture {
                 object-fit: fill;
