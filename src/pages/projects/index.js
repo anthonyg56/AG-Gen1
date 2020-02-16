@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from "../../components/layout/layout"
 import SEO from "../../components/misc/seo"
-import ProjectsCard from '../../components/projects/Card'
+import ProjectsCard from '../../components/projects/card'
 import BackgroundImg from '../../components/misc/backgroundImage'
 
 const ProjectsPage = ({ data }) => {
