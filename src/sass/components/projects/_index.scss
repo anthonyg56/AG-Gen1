@@ -3,7 +3,7 @@
         justify-content: center;
         overflow: hidden;
         box-sizing: border-box;
-        padding: 75px 35px 0 35px;
+        padding: 75px 35px 35px 35px;
         .Cards-Container {
             transform: translateY(0px);
             overflow: auto;
@@ -11,7 +11,7 @@
             height: 100%;
             display: initial;
             grid-template-columns: none;
-            grid-column-gap: 15px;
+            grid-column-gap: 0px;
             .Projects-Card {
                 height: 400px;
                 width: 100%;
