@@ -1,9 +1,11 @@
 @media (max-width: 767px) {
     .Services {
         justify-content: center;
+        background-attachment: fixed!important;
         overflow: hidden;
         box-sizing: border-box;
         padding: 75px 25px 50px 25px;
+        height: 100%!important;
         .Container {
             transform: translateY(0px);
             padding: 0px;
@@ -11,7 +13,6 @@
             display: initial;
             grid-template-columns: none;
             grid-column-gap: 0px;
-            height: 70%;
             .Attribute {
                 box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
                 border-radius: 5px;
