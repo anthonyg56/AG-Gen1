@@ -19,9 +19,11 @@ const Layout = ({ children, payload }) => {
 
   const style = {
     open: {
+      display: 'inital',
       zIndex: 1
     },
     close: {
+      display: 'none',
       zIndex: -1
     }
   }
