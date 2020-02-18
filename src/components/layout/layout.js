@@ -5,22 +5,35 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 
 import Header from "./header"
 import Footer from './footer'
 
-import MenuIcon from '../../images/Icons/Navigation/menu.svg'
+import MobileNav from './mobileNav'
 import '../../sass/index.scss'
 
 const Layout = ({ children, payload }) => {
+  const [ isOpen, toggleOpen ] = useState(false)
+  const toggle = () => isOpen === false ? toggleOpen(true) : toggleOpen(false)
+
+  const style = {
+    open: {
+      zIndex: 1
+    },
+    close: {
+      zIndex: -1
+    }
+  }
+  const currentStyle = isOpen === false ? style.close : style.open
 
   return (
     <div className="Layout">
-      <Header />
+      <MobileNav style={currentStyle}/>
+      <Header/>
       <div className="Nav-Menu-Mobile">
         {/* <img src={MenuIcon}/> */}
-        <h4>Menu</h4>
+        <h4 onClick={() => toggle()} >{isOpen === false ? 'Menu' : 'Close'}</h4>
       </div>
       <div className="Content">
         { children }

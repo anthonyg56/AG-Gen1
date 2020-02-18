@@ -10,7 +10,7 @@ import AG from '../../images/Icons/AG.svg';
 const Header = () => 
     <div className="Desktop-Nav">
       <div className="Logo">
-        <Link to="/"><img src={AG} alt="Logo" /></Link>
+        <Link to="/"><img src={AG} alt="Logo"/></Link>
       </div>
       <div className="Menu">
         <Link to="/" activeClassName="active" >Home</Link>

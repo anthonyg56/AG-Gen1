@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout/layout'
@@ -13,8 +13,8 @@ import LiveIcon from '../images/Icons/projects/live.svg'
 import GithubIcon from '../images/Icons/projects/github.svg'
 
 const ProjectPost = ({ data, pageContext }) => {
-    let index = 0
-    const switchIndex = (newIndex) => index === newIndex ? null : index = newIndex
+    const [ index, toggleIndex ] = useState(0)
+    const toggle = newIndex => index === newIndex ? null : toggleIndex(newIndex)
 
     const context = pageContext
     const {
@@ -94,11 +94,11 @@ const ProjectPost = ({ data, pageContext }) => {
                         </div>
                     </div>
                     <div className="Icon-Links">
-                        <div className={`Icon ${index === 0 ? 'Active-Icon' : null}`} id="Description" onClick={ () => index === 0 ? null : index = 0 } style={ index === 0 ? style.active : null }>
+                        <div className={`Icon ${index === 0 ? 'Active-Icon' : null}`} id="Description" onClick={ () => toggle(0) } style={ index === 0 ? style.active : null }>
                             <img src={DescriptionIcon} style={ index === 0 ? svgStyle.active : svgStyle.normal } />
                             <h6>Description</h6>
                         </div>
-                        <div className={`Icon ${index === 1 ? 'Active-Icon' : null}`} id="My-Role" onClick={ () => index === 1 ? null : index = 1 } style={ index === 1 ? style.active : null }>
+                        <div className={`Icon ${index === 1 ? 'Active-Icon' : null}`} id="My-Role" onClick={ () => toggle(1) } style={ index === 1 ? style.active : null }>
                             <img src={ContributionIcon} style={ index === 1 ? svgStyle.active : svgStyle.normal } />
                             <h6>My Contribution</h6>
                         </div>

@@ -34,8 +34,8 @@ const Services = () => {
           </div>
           <div className="Description">
             <p>
-              Different problems require different solutions to meet
-              expectations. In order produce results its imperative to be
+              Different problems require different solutions to meet or if possible exceed
+              expectations. In order produce the results needed, its imperative to be
               creative and think outside the box strategically.
             </p>
           </div>
@@ -49,9 +49,9 @@ const Services = () => {
           </div>
           <div className="Description">
             <p>
-              Content is everywhere on the web today. CMS provides an efficient
-              system to help manage content in large or small quantities stay
-              simple, clean, and organized.
+              Content is king on the web, and a content management system is an efficient
+              solution to help manage it all. The products i develop connect to a third party CMS 
+              to help those who arent so tech savy on your team manage every piece of content.
             </p>
           </div>
         </div>

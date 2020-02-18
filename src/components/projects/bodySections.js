@@ -34,7 +34,8 @@ const BodySections = ({ index, projectDescription, contributionText, myToolsText
         //tools
     ]
 
-    return sections[index]
+    const body = sections[index]
+    return body
 }
 
 export default BodySections
