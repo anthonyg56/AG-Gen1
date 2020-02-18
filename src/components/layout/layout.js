@@ -29,7 +29,7 @@ const Layout = ({ children, payload }) => {
 
   return (
     <div className="Layout">
-      <MobileNav style={currentStyle}/>
+      <MobileNav style={currentStyle} close={() => toggleOpen(false)}/>
       <Header/>
       <div className="Nav-Menu-Mobile">
         {/* <img src={MenuIcon}/> */}

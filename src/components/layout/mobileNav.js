@@ -7,20 +7,20 @@ import InstagramW from '../../images/Icons/social/003-instagram.svg'
 import GithubW from '../../images/Icons/social/github.svg'
 import AG from '../../images/Icons/AG.svg';
 
-const MobileNav = ({ style }) => {
+const MobileNav = ({ style, close }) => {
 
     return (
         <div className="Mobile-Nav" style={style}>
             <div className="Container">
                 <div className="Logo">
-                    <Link to="/">
+                    <Link to="/" onClick={close}>
                         <img src={AG} alt="Logo"/>
                     </Link>
                 </div>
                 <div className="Links">
-                    <Link to="/" activeClassName="active">Home</Link>
-                    <Link to="/projects" activeClassName="active">Projects</Link>
-                    <Link to="#" activeClassName="active">Blog (Comming Soon)</Link>
+                    <Link to="/" activeClassName="active" onClick={close}>Home</Link>
+                    <Link to="/projects" activeClassName="active" onClick={close}>Projects</Link>
+                    <Link to="#" activeClassName="active" onClick={close}>Blog (Comming Soon)</Link>
                 </div>
                 <div className="Social-Media">
                     <a href="https://twitter.com/DevGayflor">
