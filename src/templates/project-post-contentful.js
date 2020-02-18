@@ -82,12 +82,6 @@ const ProjectPost = ({ data, pageContext }) => {
             <SEO title={title}/>
             <div className='Project-Display' style={style.normal}>
                 <div className="Container">
-                    <div className="Title">
-                        <Link to="/projects">
-                            <img src={LeftArrowIcon} alt="" style={svgStyle.normal} />
-                        </Link>
-                        <h1>{ title }</h1>         
-                    </div>
                     <div className="Body" >
                         <BodySections 
                             index={index} 

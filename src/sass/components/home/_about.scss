@@ -1,12 +1,12 @@
 @media (max-width: 767px) {
     .About-Me {
         justify-content: center;
-        padding: 75px 25px 40px 25px;
+        padding: 75px 25px 0px 25px;
         box-sizing: border-box;
         .Container {
             transform: translateY(0px);
             width: 100%;
-            height: auto;
+            height: 70%;
             box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
             border-radius: 5px;
             background-color: rgba(248, 248, 255, .15);
@@ -109,6 +109,9 @@
                         font-family: $font2;
                         font-size: 16px;
                         letter-spacing: 1px;
+                        a {
+                            color: white;
+                        }
                     }
                 }
             }
