@@ -19,7 +19,7 @@ const Layout = ({ children, payload }) => {
 
   const style = {
     open: {
-      display: 'inital',
+      display: 'block',
       zIndex: 1
     },
     close: {
