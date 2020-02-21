@@ -102,10 +102,6 @@ const ProjectPost = ({ data, pageContext }) => {
                             <img src={ContributionIcon} style={ index === 1 ? svgStyle.active : svgStyle.normal } />
                             <h6>My Contribution</h6>
                         </div>
-                        <div className={`Icon ${index === 2 ? 'Active-Icon' : null}`} id="Tools" /*onClick={ () => switchIndex(2) }*/style={ index === 2 ? style.active : null } >
-                            <img src={ToolsIcon} style={{ filter: index === 2 ? primarySvgFilter : svgFilter }} />
-                            <h6>Choice Of Tools</h6>
-                        </div>
                         <a href={url} className="Icon" id="Live-Demo">
                             <img src={LiveIcon} style={svgStyle.normal} />
                             { url === "#" ? <h6 style={{color: secondaryColoe}}>Demo Unavailable</h6> : <h6 style={{color: secondaryColoe}}>Live Demo</h6> }
