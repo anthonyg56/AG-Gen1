@@ -24,9 +24,9 @@ const AboutMe = () => {
                         <p>We live in a day and age where it's more possible than ever to bring your ideas to life through the web. I want to be an asset for anyone with a desire to create something meaningful, with the determination to make their ideas reality. By working together, let’s help the world see your vision.</p>
                         <br />
                         <p>
-                            Feel free to send me a message 
+                            Feel free to send me a message at
                             <a href="mailto:devgayflor@gmail.com">
-                                <strong>devgayflor@gmail.com </strong>
+                                <strong> devgayflor@gmail.com </strong>
                             </a>
                             for any inquiries about projects or assistance!
                         </p>
