@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Freelance Front-end Web Services`,
-    description: `Lets Help The World See Your Vision. Freelance Front-End Web Services from Development, Design, and Content Marketing based in Indianapolis, Indiana.`,
+    title: `Indianapolis Freelance Front-end Web Developer`,
+    description: `Lets Help The World See Your Vision. Freelance front-end web services from development, design, and content marketing based in Indianapolis, Indiana.`,
     author: `@AnthonyGayflor`,
   },
   plugins: [
