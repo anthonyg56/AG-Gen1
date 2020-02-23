@@ -8,7 +8,7 @@ const AboutMe = () => {
         <BackgroundImg index={0} className="About-Me">
             <div className="Container">
                 <div className="Picture">
-                    <img src={MyPic}/>
+                    <img src={MyPic} alt="faceshot of me" />
                 </div>
                 <div className="Body">
                     <div className="Header">

@@ -29,19 +29,19 @@ const BlogPage = () => {
                     </div>
                     <div className="Blocks">
                         <Link to="/blog/creativity" className="Block" id="">
-                            <img src={CreativityIcon}/>
+                            <img src={CreativityIcon} alt="creativity posts icon"/>
                             <h4>Creativity</h4>
                         </Link>
                         <Link to="/blog/web-development" className="Block" id="">
-                            <img src={WebIcon}/>
+                            <img src={WebIcon} alt="web development posts icon"/>
                             <h4>Web Development</h4>
                         </Link>
                         <Link to="/blog/freelance" className="Block" id="">
-                            <img src={FreelanceIcon}/>
+                            <img src={FreelanceIcon} alt="freelance post icon" />
                             <h4>Freelance</h4>
                         </Link>
                         <Link to="/blog/all" className="Block" id="">
-                            <img src={AllIcon}/>
+                            <img src={AllIcon} alt="all posts icon" />
                             <h4>All Posts</h4>
                         </Link>
                     </div>

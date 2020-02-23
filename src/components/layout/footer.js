@@ -9,9 +9,9 @@ const Footer = ({ payload }) => {
     if (payload.empty === false){
         const { index, length, next, previous, back } = payload
 
-        const previousLink = previous === null ? null : <Link to={previous.url}><img src={BackIcon} style={{transform: "translateY(8px)"}}/></Link>
-        const nextLink = next === null ? null : <Link to={next.url}><img src={BackIcon} style={{transform: "rotate(180deg) translateY(-8px)"}}/></Link>
-        const goBack = back === null ? null : <Link to={back.url} id="Footer-Back"><img src={BackIcon}/>{back.title}</Link>
+        const previousLink = previous === null ? null : <Link to={previous.url}><img src={BackIcon} alt={`back arrow icon to ${title}`} style={{transform: "translateY(8px)"}}/></Link>
+        const nextLink = next === null ? null : <Link to={next.url}><img src={BackIcon} alt={`next arrow icon to ${next.url}`} style={{transform: "rotate(180deg) translateY(-8px)"}}/></Link>
+        const goBack = back === null ? null : <Link to={back.url} id="Footer-Back"><img src={BackIcon} alt={`back arow icon to ${back.title}`}/>{back.title}</Link>
 
         return (
             <div className="Footer">

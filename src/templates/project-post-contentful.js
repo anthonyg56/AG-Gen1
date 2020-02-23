@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout/layout'
 import SEO from '../components/misc/seo'
 import BodySections from '../components/projects/bodySections'
 
-import LeftArrowIcon from '../images/Icons/Navigation/left-arrow.svg'
 import DescriptionIcon from '../images/Icons/projects/description.svg'
 import ContributionIcon from '../images/Icons/projects/role.svg'
-import ToolsIcon from '../images/Icons/projects/tools.svg'
 import LiveIcon from '../images/Icons/projects/live.svg'
 import GithubIcon from '../images/Icons/projects/github.svg'
 
@@ -90,24 +88,24 @@ const ProjectPost = ({ data, pageContext }) => {
                             //myToolsText={myTools}
                         />
                         <div className="Picture">
-                            <img src={mockup.file.url}/>
+                            <img src={mockup.file.url} alt={`mockup of ${title}`} />
                         </div>
                     </div>
                     <div className="Icon-Links">
                         <div className={`Icon ${index === 0 ? 'Active-Icon' : null}`} id="Description" onClick={ () => toggle(0) } style={ index === 0 ? style.active : null }>
-                            <img src={DescriptionIcon} style={ index === 0 ? svgStyle.active : svgStyle.normal } />
+                            <img src={DescriptionIcon} alt="description icon" style={ index === 0 ? svgStyle.active : svgStyle.normal } />
                             <h6>Description</h6>
                         </div>
                         <div className={`Icon ${index === 1 ? 'Active-Icon' : null}`} id="My-Role" onClick={ () => toggle(1) } style={ index === 1 ? style.active : null }>
-                            <img src={ContributionIcon} style={ index === 1 ? svgStyle.active : svgStyle.normal } />
+                            <img src={ContributionIcon} alt="contribution icon" style={ index === 1 ? svgStyle.active : svgStyle.normal } />
                             <h6>My Contribution</h6>
                         </div>
                         <a href={url} className="Icon" id="Live-Demo">
-                            <img src={LiveIcon} style={svgStyle.normal} />
+                            <img src={LiveIcon} alt="live demo icon" style={svgStyle.normal} />
                             { url === "#" ? <h6 style={{color: secondaryColoe}}>Demo Unavailable</h6> : <h6 style={{color: secondaryColoe}}>Live Demo</h6> }
                         </a>
                         <a href={githubRepo} className="Icon" id="Github">
-                            <img src={GithubIcon} style={svgStyle.normal} />
+                            <img src={GithubIcon} alt="github icon" style={svgStyle.normal} />
                             { githubRepo === "#" ? <h6 style={{color: secondaryColoe}}>Github Unavailable</h6> : <h6 style={{color: secondaryColoe}}>Github</h6> }
                         </a>
                     </div>     

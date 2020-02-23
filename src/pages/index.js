@@ -4,8 +4,6 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/misc/seo"
 
 import Landing from "../components/home/landing"
-import About from "../components/home/about"
-import Services from "../components/home/services"
 
 const IndexPage = () => {
   const payload = {
